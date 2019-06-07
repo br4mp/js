@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validaLogin(email, password) {
+            if (email === 'brennoudi@gmail.com') {
+                if (password === '123456') {
+                    return 'Login Efetuado';
+                } else {
+                    return 'password errado';
+                }
+            } else {
+                return 'Email errado';
+            }                       
+        }
+        
+        var login = validaLogin('brennoudi@gmail.com', '123456');
+        console.log(login);
+
+        function podePedirIfood(temFome, temDinheiro) {
+            if (temFome === true) {
+                if (temDinheiro === true) {
+                    return 'Pede um ifood';
+                } else {
+                    return 'faz um miojo';
+                }
+            } else {
+                return 'vai dormir';
+            }
+        }
+
+        var xpto = podePedirIfood(true, true);
+        console.log(xpto);
+       
+    </script>
+</body>
+</html>
