@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrarEndereco(endereco) {
+            return (
+                "Você mora em " +
+                endereco.cidade +
+                " / " +
+                endereco.uf +
+                ", no bairro " +
+                endereco.bairro +
+                ', no logradouro "' +
+                endereco.rua +
+                '" no numero ' +
+                endereco.numero +
+                "."
+            );
+        }
+
+        var endereco = {
+            rua: "Rua Professora Celeida Santos de Paula",
+            numero: "265",
+            complemento: "Fundos",
+            bairro: "Jardim Brasília",
+            cidade: "Uberlândia",
+            uf: "MG"
+        };    
+        console.log(mostrarEndereco(endereco));  
+    </script>
+</body>
+</html>
